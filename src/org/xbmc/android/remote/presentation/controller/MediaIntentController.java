@@ -149,7 +149,7 @@ public class MediaIntentController extends AbstractController implements IContro
 					return;
 				}
 				
-				final String url = "plugin://plugin.video.t0mm0.test/?play=" + Uri.encode(path);
+				final String url = "plugin://plugin.video.t0mm0.test/?play=play&url=" + Uri.encode(path);
 				String message = "Do you want to play\n" + path + "\n on XBMC?";
 				if (prefs.getBoolean(CONFIRM_PLAY_ON_XBMC, true)) {
 					final Builder builder = new Builder(mActivity);
